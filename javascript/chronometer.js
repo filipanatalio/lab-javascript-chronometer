@@ -9,6 +9,9 @@ class Chronometer {
     // ... your code goes here
 
     this.intervalId = setInterval(() => {
+      if (callback) {
+        callback();
+      }
       this.currentTime++;
       // if (callback > ) {
       //   clearInterval(intervalId2);
